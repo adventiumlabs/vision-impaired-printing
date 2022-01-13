@@ -1,37 +1,42 @@
 # Summary
 
-This tool chain uses Open Computer Vision (OpenCV) to extract contours from input images and generate 3d models. 
+There are limited tools available to allow vision-impaired people to interpret graphical information like presentation charts, 
+schematics, or electrical diagrams. The popularity and low-cost of 3d printers makes printing tactile representations of graphical 
+information possible at a reasonable cost. 
+
+This tool chain uses Open Computer Vision (OpenCV) to extract contours from input bitmap images and generate 3d models for a 3d printer.
+
+# Workflow
+
+This is a brief summary of the workflow. See the wiki for more detail. 
+
+1. Create content. Diagrams need to be on a white background. 
+1. Convert text in your diagram to braille using a tool like Inkscape.
+1. Create a bitmap image of your diagram (PNG preferred).
+1. Run bitmap-to-scad ```bitmap-to-scad.sh -i example.png``` to generate a .scad file.
+1. Use OpenSCAD to create a .stl file.
+1. Use a 3d printer configuration tool like Ultimaker Cura to create a printer-specific model (e.g., gcode file)
+1. Print your diagram! 
 
 # Installation
 
-This uses:
+## Install Prerequisities
+
+This toolchain uses:
 - Python3
 - OpenCV
 
-@tsmith installed via
+Install these via
 
 ```
 pip3 install opencv-python
 pip3 install matplotlib
 ```
 
+## Install
 
-You may also have to install scikit-python 
-
-# Using with SimScape
-
-I find that 24pt Courier New works best for generating Braille with Inkscape. 
-
-1. Select all items in SimScape model
-1. Right Click -> Format -> Font Style for Selection...
-1. Courier New, 24pt
-1. Export the image as SVG via the Matlab shell
-   1. For a project called `symbols.slx`
-   1. `>> print('-ssymbols','-dsvg','symbols.svg')` 
-1. Open the image in InkScape
-1. Extensions -> Text -> Convert to Braille
-1. Export to PNG at 600dpi
-
+1. Put this directory somewhere on your computer, such as ```/usr/local/bin```
+1. Add the install directory to your path by adding the following to your ~/.bash_profile ```export PATH="/usr/local/bin/vision-impaired-printing:$PATH"```
 
 Copyright 2022 Adventium Labs
 Licensed under the Apache License, Version 2.0 (the "License");

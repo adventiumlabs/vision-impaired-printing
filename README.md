@@ -8,7 +8,7 @@ This tool chain uses Open Computer Vision (OpenCV) to extract contours from inpu
 
 # Workflow
 
-This is a brief summary of the workflow. See the wiki for more detail. 
+This is a brief summary of the workflow. See the docs for more detail. 
 
 1. Create content. Diagrams need to be on a white background. 
 1. Convert text in your diagram to braille using a tool like Inkscape.

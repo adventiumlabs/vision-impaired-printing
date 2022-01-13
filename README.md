@@ -38,6 +38,8 @@ pip3 install matplotlib
 1. Put this directory somewhere on your computer, such as ```/usr/local/bin```
 1. Add the install directory to your path by adding the following to your ~/.bash_profile ```export PATH="/usr/local/bin/vision-impaired-printing:$PATH"```
 
+# Legal
+
 Copyright 2022 Adventium Labs
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

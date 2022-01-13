@@ -15,7 +15,15 @@ Tyler uses paper clips at the edges of the printer bed to hold the paper in plac
 * Use 0.2mm height. Any additional layers increase the likelihood that the extruded material will break off when touched.
 
 # Print Settings
-Tyler uses Ultimaker Cura for printer configuration. 
+Tyler uses Ultimaker Cura for printer configuration. The screenshots are from version 4.12.1
+
+## General Settings
+
+| Setting | Value |
+| ------ | ------ |
+| Printing Material | PLA | 
+| Tool Temp | 200c |
+| Bed Temp | 65c |
 
 ## Special Settings
 

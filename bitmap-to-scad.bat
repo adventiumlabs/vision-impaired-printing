@@ -14,4 +14,4 @@ REM See the License for the specific language governing permissions and
 REM limitations under the License.
 
 python3 --version
-python3 %~dp0\bitmap-to-scad.py %*
+python3 %~dp0\bitmap_to_scad.py %*

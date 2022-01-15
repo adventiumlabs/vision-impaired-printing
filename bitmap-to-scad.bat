@@ -1,4 +1,4 @@
-REM wrapper script for bitmap-to-scad
+REM wrapper script for bitmap_to_scad
 
 REM Copyright 2022 Adventium Labs
 REM Licensed under the Apache License, Version 2.0 (the "License");

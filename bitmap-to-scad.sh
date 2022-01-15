@@ -21,5 +21,5 @@ echo "TOOLCHAIN_DIR $TOOLCHAIN_DIR"
 
 python3 --version
 
-python3 $TOOLCHAIN_DIR/bitmap-to-scad.py "$@"
+python3 $TOOLCHAIN_DIR/bitmap_to_scad.py "$@"
 

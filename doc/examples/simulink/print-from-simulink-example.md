@@ -44,7 +44,11 @@ This creates a new .svg file that has the text replaced with braille.
 $ svg-braille-converter.sh -i addition.svg 
 ```
 
-![Simulink SVG](resources/addition-braille.svg)
+Here's the resulting SVG file:
+
+[Simulink SVG with generated braille](resources/addition-braille.svg)
+
+Your browser may have trouble rendering this SVG file. Inkscape opens it happily for me. 
 
 ## Create a bitmap from the SVG file
 
@@ -54,6 +58,8 @@ not found it to be reliable.
 ![Inkscape Export Settings](img/inkscape-export.png)
 
 I like to use 600dpi. 
+
+Here's the resulting PNG file:
 
 ![Inkscape Export Settings](resources/addition-braille.png)
 
@@ -94,7 +100,7 @@ to scale the model.
 
 Open the resulting .scad file in OpenSCAD, then press the render button. 
 
-If you couldn't generate it, you can also find it [here](resources/addition-braille.scad)
+If you couldn't generate it, you can also find the SCAD file [here](resources/addition-braille.scad)
 
 ![OpenSCAD Render Button](img/openscad-render.png)
 

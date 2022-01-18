@@ -11,14 +11,12 @@ with any SVG file (just skip the Simulink steps).
 If you start with the default Simulink formatting, it will look
 something like this:
 
-![Initial Simulink Diagram](img/starting-diagram.png)
+![Initial Simulink Diagram screenshot](img/starting-diagram.png)
 
 This font size is too small for clean conversion to braille,
-so the first step is to increase the font size and switch to a monospace font like courier new.
+so the first step is to increase the font size to 24 and switch to a monospace font like courier new.
 
-![Simulink Formatting Options](img/simulink-formatting.png)
-
-There, that's better
+![Simulink Formatting Options Screenshot](img/simulink-formatting.png)
 
 ![Formatted Diagram](img/formatted-diagram.png)
 
@@ -55,13 +53,13 @@ Your browser may have trouble rendering this SVG file. Inkscape opens it happily
 InkScape is the best tool I have found for doing this. ImageMagick has a SVG to PNG conversion capability, but I have
 not found it to be reliable. 
 
-![Inkscape Export Settings](img/inkscape-export.png)
+![Inkscape Export Settings Screenshot](img/inkscape-export.png)
 
 I like to use 600dpi. 
 
 Here's the resulting PNG file:
 
-![Inkscape Export Settings](resources/addition-braille.png)
+![Generated PNG File](resources/addition-braille.png)
 
 ## Create an SCAD model from the bitmap
 
@@ -102,7 +100,7 @@ Open the resulting .scad file in OpenSCAD, then press the render button.
 
 If you couldn't generate it, you can also find the SCAD file [here](resources/addition-braille.scad)
 
-![OpenSCAD Render Button](img/openscad-render.png)
+![OpenSCAD Render Button Screenshot](img/openscad-render.png)
 
 Your model will disappear for a little bit, this is normal. 
 
@@ -110,7 +108,7 @@ Your model will disappear for a little bit, this is normal.
 
 In OpenSCAD, select File -> Export -> STL
 
-![OpenSCAD Export as STL](img/stl-export.png)
+![OpenSCAD Export as STL Screenshot](img/stl-export.png)
 
 Here's the [resulting file](resources/addition-braille.stl)
 
@@ -118,11 +116,19 @@ Here's the [resulting file](resources/addition-braille.stl)
 
 Drag the STL file into Ultimaker Cura
 
-![Ultimaker Cura](img/cura.png)
+![Ultimaker Cura screenshot](img/cura.png)
 
 Apply the following custom print settings:
 
-![Ultimaker Cura Settings](img/cura-settings.png)
+| Setting | Value |
+| ------ | ------ |
+| Print Thin Walls | True |
+| Build Plat Temperature | 65.0 c |
+| Enable Retraction | True | 
+| Z Hop When Retracted | True | 
+| Z Hop Height | 1.0 mm | 
+
+![Ultimaker Cura Settings Screenshot](img/cura-settings.png)
 
 Click Slice to generate a gcode file. [Here is what I generated](resources/CE3PRO_addition-braille.gcode).
 
@@ -138,9 +144,9 @@ If your paper stayed flat on the print bed, you should have a pretty nice tactil
 Mine isn't quite perfect (note the thin tendrils of filament left when the extruder lifts up). 
 I'll update this guide as I improve the settings.
 
-![Print top view](img/paper-printed-top.jpg)
+![Print top view photo](img/paper-printed-top.jpg)
 
-![Print bend demonstration](img/paper-printed-curved.jpg)
+![Print bend demonstration photo](img/paper-printed-curved.jpg)
 
 # Legal
 

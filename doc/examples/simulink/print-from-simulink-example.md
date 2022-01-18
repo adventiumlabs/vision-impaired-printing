@@ -123,7 +123,7 @@ Apply the following custom print settings:
 | Setting | Value |
 | ------ | ------ |
 | Print Thin Walls | True |
-| Build Plat Temperature | 65.0 c |
+| Build Plate Temperature | 65.0 c |
 | Enable Retraction | True | 
 | Z Hop When Retracted | True | 
 | Z Hop Height | 1.0 mm | 

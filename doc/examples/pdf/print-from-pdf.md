@@ -79,7 +79,6 @@ You will need to either set an alias like before for inkscape or add openscad co
 
 ### Rendering in OpenSCAD
 Open the resulting .scad file in OpenSCAD, then press the render button. 
-![OpenSCAD Render Button Screenshot](img/openscad-render.png)
 
 Your model will disappear for a little bit, this is normal. 
 

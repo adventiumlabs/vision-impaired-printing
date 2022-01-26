@@ -87,8 +87,6 @@ Your model will disappear for a little bit, this is normal.
 
 In OpenSCAD, select File -> Export -> STL
 
-![OpenSCAD Export as STL Screenshot](img/stl-export.png)
-
 ### Rendering via command line
 ```
 openscad -o ./braille-font-test.stl ./doc/examples/pdf/resources/braille-font-test.scad
@@ -101,7 +99,6 @@ Here's the [resulting file](braille-font-test.stl)
 
 Drag the STL file into Ultimaker Cura
 
-![Ultimaker Cura screenshot](img/cura.png)
 
 Apply the following custom print settings.
 

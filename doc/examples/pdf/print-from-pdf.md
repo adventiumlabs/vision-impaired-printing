@@ -41,7 +41,8 @@ need this option if you do not have text or already have braille in your pdf.
 $ svg-braille-converter.sh -i addition.svg 
 ```
 
-Your browser may have trouble rendering this SVG file. Inkscape opens it happily for me. 
+Your browser may have trouble rendering this SVG file. Inkscape opens it happily for me. We skipped this
+in the following example as most of the file was already in braille and we needed some text to be printed as well.
 
 ## Create a bitmap from the svg file
 

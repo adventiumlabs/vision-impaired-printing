@@ -33,6 +33,10 @@ pip3 install opencv-python
 pip3 install matplotlib
 ```
 
+As well it requires:
+- [OpenSCAD](https://openscad.org/downloads.html)
+- [Inkscape](https://inkscape.org/release/inkscape-1.1.1/)
+
 ## Install
 
 1. Put this directory somewhere on your computer, such as ```/usr/local/bin```

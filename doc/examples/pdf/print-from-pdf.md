@@ -52,8 +52,11 @@ not found it to be reliable.
 I like to use 600dpi. 
 
 ```
-inkscape .\braille-font-test.pdf -o .\braille-font-test.png  --export-dpi=600 --export-background=#ffffff
+inkscape --pdf-poppler .\braille-font-test.pdf -o .\braille-font-test.png  --export-dpi=600 --export-background=#ffffff
 ```
+
+The pdf-poppler flag keeps inkscape from converting any braille font back to text if the font is missing form your system
+the export-background flag keeps the background of the exported image white.
 
 Here's the resulting PNG file:
 

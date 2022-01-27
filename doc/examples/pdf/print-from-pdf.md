@@ -44,7 +44,7 @@ $ svg-braille-converter.sh -i addition.svg
 Your browser may have trouble rendering this SVG file. Inkscape opens it happily for me. We skipped this
 in the following example as most of the file was already in braille and we needed some text to be printed as well.
 
-## Create a bitmap from the svg file
+## Create a bitmap from the svg file or directly from the pdf if you skipped the braille generation step
 
 InkScape is the best tool I have found for doing this. ImageMagick has a SVG to PNG conversion capability, but I have
 not found it to be reliable. 
@@ -64,7 +64,7 @@ Here's the resulting PNG file:
 OpenSCAD is 3d modeling tool. Generate an SCAD file by running:
 
 ```
-python bitmap_to_scad.py -i doc/examples/pdf/resources/braille-font-test.png -x 200 -y 200 -s 6 
+python bitmap_to_scad.py -i doc/examples/pdf/resources/braille-font-test.png -x 200 -y 200 -s 6 -r 600
 ```
 
 The parameters to this command are:

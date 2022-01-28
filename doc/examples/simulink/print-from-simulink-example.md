@@ -1,3 +1,12 @@
+# This project has moved! 
+
+It is now at https://github.com/tactile-graphics/3d-printing-tools
+
+This page will not be updated. 
+
+---------
+
+
 # Printing a Tactile Diagram from Simulink
 
 This example walks through the steps required to print a tactile diagram
